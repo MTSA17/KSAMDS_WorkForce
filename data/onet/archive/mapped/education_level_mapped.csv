@@ -1,7 +1,0 @@
-id,name,source_ref,description,type_dims,level_dims,basis_dims,environment_dims,mode_dims,physicality_dims,cognitive_dims
-44f9e318-0171-5a05-8ed6-a954e8e9b3bf,High School,EDU_1,,,,,,,,
-4d28996b-f577-55fb-a546-f45c409284ce,Some College,EDU_2,,,,,,,,
-b1aff614-7f0e-5457-be92-8390262da7ca,Associate's Degree,EDU_3,,,,,,,,
-e9c05d2c-086a-5ee6-87d9-18929737b758,Bachelor's Degree,EDU_4,,,,,,,,
-dc204a71-0783-5a1f-b2c8-4eb8ad74bfee,Master's Degree,EDU_5,,,,,,,,
-c0fadf61-a64f-5384-8e49-b0c0c7eab271,Doctoral Degree,EDU_6,,,,,,,,
