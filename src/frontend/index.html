@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>KSAMDS - Occupation Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top brand bar -->
+  <div class="brandbar">
+    <div class="brandbar__inner">
+      <img class="brandbar__img-left" src="logo.jpg" alt="KSAMDS Logo">
+    </div>
+  </div>
+
+  <!-- Page title -->
+  <h1 class="page-title">Occupation Explorer</h1>
+
+  <!-- Search + filter pills -->
+  <header class="topbar">
+    <div class="search-wrap">
+      <input type="text" id="search" placeholder="Search occupations, knowledge, skills..." aria-label="Search input" />
+      <span class="search-hint" aria-hidden="true">/</span>
+
+      <!-- Autocomplete Dropdown (NEW) -->
+      <div class="autocomplete-dropdown" id="autocomplete-dropdown" style="display: none;">
+        <div class="autocomplete-loading" id="autocomplete-loading" style="display: none;">
+          Searching...
+        </div>
+        <ul class="autocomplete-list" id="autocomplete-list"></ul>
+        <div class="autocomplete-empty" id="autocomplete-empty" style="display: none;">
+          No occupations found
+        </div>
+      </div>
+    </div>
+
+    <!-- Knowledge Filter -->
+    <details class="dd" data-filter="knowledge">
+      <summary class="pill" aria-haspopup="listbox">
+        Knowledge ▾
+        <span class="badge" style="display:none;">0</span>
+      </summary>
+      <div class="panel" role="dialog" aria-label="Select knowledge dimensions">
+        <div class="panel__search">
+          <input type="text" class="dimension-search" placeholder="Search dimensions..." aria-label="Search knowledge">
+        </div>
+        <div class="panel__dimensions">
+          <!-- Dimensions will be loaded dynamically from API -->
+        </div>
+        <div class="panel__footer">
+          <span class="panel__footer-left"><span class="total-selected">0</span> selected</span>
+          <div>
+            <button class="btn btn--ghost clear-btn" type="button">Clear</button>
+            <button class="btn btn--primary apply-btn" type="button">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Skills Filter -->
+    <details class="dd" data-filter="skills">
+      <summary class="pill" aria-haspopup="listbox">
+        Skills ▾
+        <span class="badge" style="display:none;">0</span>
+      </summary>
+      <div class="panel" role="dialog" aria-label="Select skills dimensions">
+        <div class="panel__search">
+          <input type="text" class="dimension-search" placeholder="Search dimensions..." aria-label="Search skills">
+        </div>
+        <div class="panel__dimensions">
+          <!-- Dimensions will be loaded dynamically from API -->
+        </div>
+        <div class="panel__footer">
+          <span class="panel__footer-left"><span class="total-selected">0</span> selected</span>
+          <div>
+            <button class="btn btn--ghost clear-btn" type="button">Clear</button>
+            <button class="btn btn--primary apply-btn" type="button">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Abilities Filter -->
+    <details class="dd" data-filter="abilities">
+      <summary class="pill" aria-haspopup="listbox">
+        Abilities ▾
+        <span class="badge" style="display:none;">0</span>
+      </summary>
+      <div class="panel" role="dialog" aria-label="Select abilities dimensions">
+        <div class="panel__search">
+          <input type="text" class="dimension-search" placeholder="Search dimensions..." aria-label="Search abilities">
+        </div>
+        <div class="panel__dimensions">
+          <!-- Dimensions will be loaded dynamically from API -->
+        </div>
+        <div class="panel__footer">
+          <span class="panel__footer-left"><span class="total-selected">0</span> selected</span>
+          <div>
+            <button class="btn btn--ghost clear-btn" type="button">Clear</button>
+            <button class="btn btn--primary apply-btn" type="button">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Functions Filter -->
+    <details class="dd" data-filter="functions">
+      <summary class="pill" aria-haspopup="listbox">
+        Functions ▾
+        <span class="badge" style="display:none;">0</span>
+      </summary>
+      <div class="panel" role="dialog" aria-label="Select functions dimensions">
+        <div class="panel__search">
+          <input type="text" class="dimension-search" placeholder="Search dimensions..." aria-label="Search functions">
+        </div>
+        <div class="panel__dimensions">
+          <!-- Dimensions will be loaded dynamically from API -->
+        </div>
+        <div class="panel__footer">
+          <span class="panel__footer-left"><span class="total-selected">0</span> selected</span>
+          <div>
+            <button class="btn btn--ghost clear-btn" type="button">Clear</button>
+            <button class="btn btn--primary apply-btn" type="button">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Tasks Filter -->
+    <details class="dd" data-filter="tasks">
+      <summary class="pill" aria-haspopup="listbox">
+        Tasks ▾
+        <span class="badge" style="display:none;">0</span>
+      </summary>
+      <div class="panel" role="dialog" aria-label="Select tasks dimensions">
+        <div class="panel__search">
+          <input type="text" class="dimension-search" placeholder="Search dimensions..." aria-label="Search tasks">
+        </div>
+        <div class="panel__dimensions">
+          <!-- Dimensions will be loaded dynamically from API -->
+        </div>
+        <div class="panel__footer">
+          <span class="panel__footer-left"><span class="total-selected">0</span> selected</span>
+          <div>
+            <button class="btn btn--ghost clear-btn" type="button">Clear</button>
+            <button class="btn btn--primary apply-btn" type="button">Apply Filters</button>
+          </div>
+        </div>
+      </div>
+    </details>
+
+    <!-- Search icon button -->
+    <button class="icon-btn" aria-label="Execute search">
+      <svg class="icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+        <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"></line>
+      </svg>
+    </button>
+  </header>
+
+  <!-- Occupation Info Section (NEW) -->
+  <div class="occupation-info" id="occupation-info" style="display: none;">
+    <div class="occupation-info__content">
+      <h2 class="occupation-info__title" id="occupation-title"></h2>
+      <p class="occupation-info__description" id="occupation-description"></p>
+    </div>
+  </div>
+
+  <!-- Five content sections -->
+  <main class="wrap">
+    <section class="block">
+      <h2>Knowledge<span class="count-badge">0</span></h2>
+      <div class="content-box" id="knowledge-box">
+        <div class="empty">
+          <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <div>No knowledge items yet. Use filters above to explore.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Skills<span class="count-badge">0</span></h2>
+      <div class="content-box" id="skills-box">
+        <div class="empty">
+          <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <div>No skills yet. Use filters above to explore.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Abilities<span class="count-badge">0</span></h2>
+      <div class="content-box" id="abilities-box">
+        <div class="empty">
+          <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <div>No abilities yet. Use filters above to explore.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Functions<span class="count-badge">0</span></h2>
+      <div class="content-box" id="functions-box">
+        <div class="empty">
+          <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <div>No functions yet. Use filters above to explore.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <h2>Tasks<span class="count-badge">0</span></h2>
+      <div class="content-box" id="tasks-box">
+        <div class="empty">
+          <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></line>
+          </svg>
+          <div>No tasks yet. Use filters above to explore.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="relationship-modal" style="display: none;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-entity-name"></h2>
+        <button class="modal-close" id="modal-close" aria-label="Close modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <div class="modal-loading">Loading relationships...</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

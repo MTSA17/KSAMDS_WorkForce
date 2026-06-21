@@ -1,0 +1,41 @@
+id,name,source_ref,description,type_dims,level_dims,basis_dims,environment_dims,mode_dims,physicality_dims,cognitive_dims
+7899a0b4-3aeb-5633-9eac-cd9f64e76e5d,Getting Information,4.A.1.a.1,,,,,Public-Facing,,Moderate,Heavy
+fe6a5b26-c30a-595c-a6bc-449fd45b97f8,"Monitoring Processes, Materials, or Surroundings",4.A.1.a.2,,,,,Outdoors,,Moderate,Heavy
+0c044331-4608-5787-a63d-df7d8b18146a,"Identifying Objects, Actions, and Events",4.A.1.b.1,,,,,Public-Facing,,Light,Heavy
+8931ae0b-2cb4-58f4-b5fd-8f4a0eeea537,"Estimating the Quantifiable Characteristics of Products, Events, or Information",4.A.1.b.3,,,,,Indoors (Office/Lab),,Light,Heavy
+a02eb264-f355-557a-b3da-5bd7a0b613b8,"Judging the Qualities of Objects, Services, or People",4.A.2.a.1,,,,,Public-Facing,,Moderate,Heavy
+d86955e3-05df-537d-b9e3-caa9cea8cc83,Processing Information,4.A.2.a.2,,,,,Independent,,Light,Heavy
+4417904f-d25d-5d0b-9633-3e9f7bfa5032,Evaluating Information to Determine Compliance with Standards,4.A.2.a.3,,,,,Independent,,Moderate,Heavy
+5d29f83d-92a7-51c6-beb3-8713c95155c3,Analyzing Data or Information,4.A.2.a.4,,,,,Independent,,Light,Heavy
+2f8a9a65-ade2-556a-a067-38d41461fb91,Making Decisions and Solving Problems,4.A.2.b.1,,,,,Independent,,Moderate,Heavy
+4b6d866e-e965-5dfc-935c-59e276ee8a51,Thinking Creatively,4.A.2.b.2,,,,,Team-Oriented,,Moderate,Heavy
+5ef424ef-7c5c-5c6b-82dd-cdd961bf2517,Updating and Using Relevant Knowledge,4.A.2.b.3,,,,,Independent,,Moderate,Heavy
+bdea0abc-0955-5d4b-95c4-068ee6349b55,Developing Objectives and Strategies,4.A.2.b.4,,,,,Independent,,Moderate,Heavy
+ecb8bb99-ce48-54ad-abac-04c48fd2a6ab,Scheduling Work and Activities,4.A.2.b.5,,,,,Team-Oriented,,Light,Heavy
+c8581fa8-b4ab-532e-994c-345e2a9c7edc,"Organizing, Planning, and Prioritizing Work",4.A.2.b.6,,,,,Team-Oriented,,Light,Heavy
+9303eba0-3f9d-5a23-b372-9f6e52d9264b,Working with Computers,4.A.3.b.1,,,,,Virtual/Remote,,Light,Heavy
+921227ee-7199-591b-8226-9ec52a5e9146,Documenting/Recording Information,4.A.3.b.6,,,,,Indoors (Office/Lab),,Light,Heavy
+90925f60-f354-589c-aa43-20f47469db64,Interpreting the Meaning of Information for Others,4.A.4.a.1,,,,,Public-Facing,,Light,Heavy
+4b565414-5eef-55aa-a786-bb76369f8718,"Communicating with Supervisors, Peers, or Subordinates",4.A.4.a.2,,,,,Public-Facing,,Moderate,Heavy
+0fc92554-a487-597e-a254-ba05d203b21c,Communicating with People Outside the Organization,4.A.4.a.3,,,,,Public-Facing,,Moderate,Heavy
+294a89d8-5ebf-5340-86de-4366a2f4abf4,Establishing and Maintaining Interpersonal Relationships,4.A.4.a.4,,,,,Public-Facing,,Moderate,Heavy
+6972e68d-2610-5973-94ca-ed1745892687,Assisting and Caring for Others,4.A.4.a.5,,,,,Public-Facing,,Moderate,Heavy
+5aaafeee-464c-5246-8e55-6cc1d7039973,Selling or Influencing Others,4.A.4.a.6,,,,,Public-Facing,,Moderate,Heavy
+7e3420b6-de69-5558-9676-48ab916c81ab,Resolving Conflicts and Negotiating with Others,4.A.4.a.7,,,,,Public-Facing,,Moderate,Heavy
+47b52e82-6b9e-50c8-a8db-9792feb6d758,Performing for or Working Directly with the Public,4.A.4.a.8,,,,,Public-Facing,,Moderate,Heavy
+c5de15b8-41fc-5ef2-adb9-4d8d4378e87e,Coordinating the Work and Activities of Others,4.A.4.b.1,,,,,Team-Oriented,,Moderate,Heavy
+70c62562-478c-5c42-ba36-af7dfea5cd26,Developing and Building Teams,4.A.4.b.2,,,,,Team-Oriented,,Moderate,Heavy
+6ed2c787-a1a3-5a7f-9031-ed31ff2b975b,Training and Teaching Others,4.A.4.b.3,,,,,Public-Facing,,Moderate,Heavy
+d3d68dc5-c062-5974-b7ba-bafa30681140,"Guiding, Directing, and Motivating Subordinates",4.A.4.b.4,,,,,Public-Facing,,Light,Heavy
+127fe659-74ba-5d06-a183-96fb05bee4a6,Coaching and Developing Others,4.A.4.b.5,,,,,Public-Facing,,Moderate,Heavy
+d737dd0f-6929-545e-abef-f16c59e4d4d8,Providing Consultation and Advice to Others,4.A.4.b.6,,,,,Public-Facing,,Moderate,Heavy
+a4442d69-071e-5122-ab43-8c4d8e64db87,Performing Administrative Activities,4.A.4.c.1,,,,,Independent,,Moderate,Heavy
+f0356f92-516f-51fd-821f-a9fcc8a18be6,Staffing Organizational Units,4.A.4.c.2,,,,,Public-Facing,,Moderate,Heavy
+271160c0-9ef1-500c-893d-5f61e4184d04,Monitoring and Controlling Resources,4.A.4.c.3,,,,,Independent,,Moderate,Heavy
+ee9a2221-b24d-5d39-b83b-3773b2f20f8a,"Inspecting Equipment, Structures, or Materials",4.A.1.b.2,,,,,Outdoors,,Moderate,Moderate
+ff4e51b0-4e2f-5eb4-b32f-78a3dfa66e1d,Performing General Physical Activities,4.A.3.a.1,,,,,Indoors (Office/Lab),,Moderate,Moderate
+c38d4933-0c7c-5678-a3a3-76b6abaadddb,Handling and Moving Objects,4.A.3.a.2,,,,,Public-Facing,,Moderate,Moderate
+6abd15de-4077-5a84-92d0-248be7837b15,Controlling Machines and Processes,4.A.3.a.3,,,,,Indoors (Office/Lab),,Moderate,Moderate
+f395f1c4-5883-5ac2-ad6c-b8b9711f5cf2,"Operating Vehicles, Mechanized Devices, or Equipment",4.A.3.a.4,,,,,Outdoors,,Heavy,Moderate
+410548cf-9998-57e9-836d-0fa4d54199e1,"Drafting, Laying Out, and Specifying Technical Devices, Parts, and Equipment",4.A.3.b.2,,,,,Indoors (Office/Lab),,Moderate,Moderate
+48173941-e01e-54ed-95c4-58cacbfeffcf,Repairing and Maintaining Mechanical Equipment,4.A.3.b.4,,,,,Indoors (Office/Lab),,Moderate,Moderate
